@@ -60,7 +60,7 @@ class UserController extends Controller
             'name' => $request->name,
             'cpf' => $request->cpf,
             'email' => $request->email,
-            'role' => 2,
+            'role' => 'Inativo',
             'date' => $request->date,
             'sexo' => $request->sexo,
             'matricula' => $request->matricula,

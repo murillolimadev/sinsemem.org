@@ -38,6 +38,7 @@ Route::get('politica/', [HomeController::class, 'politica'])->name('home.pages.p
 Route::middleware('auth')->group(function () {
     //dashboard client
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+    Route::get('/login', [AdminController::class, 'login'])->name('login');
 
     // noticias
     Route::get('admin/noticias', [NoticiasController::class, 'index'])->name('admn.pages.noticias.index');
@@ -113,6 +114,9 @@ Route::middleware('auth')->group(function () {
 
     // export excel
     Route::get('users/export/', [UserController::class, 'export'])->name('admin.pages.export');
+
+    //sair
+    Route::get('sair', [AdminController::class, 'sair'])->name('sair');
 });
 
 // resertar password

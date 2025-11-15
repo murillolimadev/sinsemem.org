@@ -8,6 +8,7 @@ use App\Models\Reunioe;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels;
 
 class AdminController extends Controller
 {
@@ -19,22 +20,12 @@ class AdminController extends Controller
         $noticias = Noticia::latest()->get();
         $users = User::latest()->get();
         $reunioes = Reunioe::latest()->get();
-        if (Auth()->user()->role === 'Admin') {
-            return view('admin.pages.index', compact('noticias', 'users', 'reunioes'));
-        } else {
-            return view('home.pages.user.verify');
-        }
+        
+        return view('admin.pages.index', compact('noticias', 'users', 'reunioes'));
+       
 
 
         // return view('admin.pages.index', compact('noticias', 'users', 'reunioes'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -72,8 +63,11 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function sair(Request $request)
     {
-        //
+        Auth::guard('web')->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
     }
 }
