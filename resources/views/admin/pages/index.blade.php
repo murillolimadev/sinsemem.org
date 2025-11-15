@@ -51,10 +51,9 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
             </div>
-        @else
+        @elseif (auth()->user()->role == 'Admin')
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-2 col-3">
@@ -87,11 +86,19 @@
                             <i class="fas fa-envelope"></i> Agenda
                         </a>
                     </div>
-                    {{-- <a href="" class="btn btn-app bg-info">
-                                <i class="fas fa-user"></i> Perfil
-                            </a> --}}
                 </div>
                 <!-- ./col -->
+            </div>
+        @elseif(auth()->user()->role == 'Inativo')
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12" style="text-align: center">
+                        <h5>
+                            Usuário não verificado! <br>
+                            Entre em contato com o administrador.
+                        </h5>
+                    </div>
+                </div>
             </div>
     </div>
     <!-- /.row -->

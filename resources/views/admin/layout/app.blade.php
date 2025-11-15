@@ -76,9 +76,11 @@
     <div class="wrapper">
         <!-- Preloader -->
         @include('admin.layout.navbar')
+
         @include('admin.layout.sidebar')
 
         @yield('content')
+
         @include('admin.layout.footer')
     </div>
 

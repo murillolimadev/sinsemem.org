@@ -14,8 +14,6 @@
              <div class="image">
                  <img src="{{ asset('home/assets/images/perfil.png') }}" class="img-circle elevation-2"
                      alt="User Image">
-
-
              </div>
              <div class="info">
                  <a href="#" class="d-block">{{ auth()->user()->name }}</a>
@@ -118,7 +116,7 @@
                      </li>
                      <li class="nav-item">
                          <a href="{{ route('admin.pages.congresso.index') }}" class="nav-link">
-                             <i class="nav-icon fas fa-angle-left"></i>
+                             <i class="nav-icon fas fa-calendar"></i>
                              <p>
                                  Assembleia
                              </p>
