@@ -50,7 +50,6 @@ class UserController extends Controller
             'sexo' => $request->sexo,
             'matricula' => $request->matricula,
             'profissao' => $request->profissao,
-            'statu' => 2,
             'role' => 'Inativo',
             'endereco' => $request->endereco,
             'email' => $request->email,
