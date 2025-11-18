@@ -13,7 +13,6 @@ use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\MensagenController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 

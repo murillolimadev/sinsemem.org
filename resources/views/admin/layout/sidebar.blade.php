@@ -151,7 +151,7 @@
                      <form action="{{ route('logout') }}" method="post">
                          @csrf
                          <li class="nav-item">
-                             <input type="submit" class="form-control btn btn-default" value="Sair">
+                             <input type="submit" class="btn btn-block btn-dark btn-sm" value="Sair">
                          </li>
                      </form>
                  </ul>
