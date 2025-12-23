@@ -38,7 +38,7 @@
 
                          <li>
                              <div class="gradient-button">
-                                 <a href="{{ route('home.pages.cadastro') }}">
+                                 <a href="{{ route('home.pages.cadastro') }}" style="text-transform: none;">
                                      <i class="fa fa-sign-in-alt"></i>
                                      Registrar-se
                                  </a>
