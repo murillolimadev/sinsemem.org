@@ -40,7 +40,7 @@
                              <div class="gradient-button">
                                  <a href="{{ route('home.pages.cadastro') }}">
                                      <i class="fa fa-sign-in-alt"></i>
-                                     Registro
+                                     Registrar-se
                                  </a>
                              </div>
                          </li>
