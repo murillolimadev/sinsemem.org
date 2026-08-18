@@ -199,6 +199,11 @@
                                             <input type="text" name="mae" class="form-control">
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>Senha padrão: 12345678</p>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="card-footer">
