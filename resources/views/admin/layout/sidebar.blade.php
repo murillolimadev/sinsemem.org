@@ -42,7 +42,7 @@
                          <a href="{{ route('dashboard') }}" class="nav-link">
                              <i class="nav-icon fas fa-tachometer-alt"></i>
                              <p>
-                                 Início
+                                 Home
                              </p>
                          </a>
                      </li>
@@ -89,7 +89,9 @@
                      <form action="{{ route('logout') }}" method="post">
                          @csrf
                          <li class="nav-item">
-                             <input type="submit" class="form-control btn btn-default" value="Sair">
+                             <i class="fa fa-sign-out" aria-hidden="true"></i>
+                             <input type="submit" class="form-control btn btn-default" style="color: #23272B;"
+                                 value="Sair">
                          </li>
                      </form>
                  </ul>
@@ -102,7 +104,7 @@
                          <a href="{{ route('dashboard') }}" class="nav-link">
                              <i class="nav-icon fas fa-tachometer-alt"></i>
                              <p>
-                                 Início
+                                 Home
                              </p>
                          </a>
                      </li>
