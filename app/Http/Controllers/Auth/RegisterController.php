@@ -76,7 +76,7 @@ class RegisterController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->cpf,
-            'role' => $request->role,
+            'role' => 'Ativo',
             'matricula' => $request->matricula,
             'sexo' => $request->sexo,
             'endereco' => $request->endereco,

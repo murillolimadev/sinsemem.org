@@ -88,15 +88,15 @@
                      </li>
                      <form action="{{ route('logout') }}" method="post">
                          @csrf
+                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                          <li class="nav-item">
-                             <i class="fa fa-sign-out" aria-hidden="true"></i>
                              <input type="submit" class="form-control btn btn-default" style="color: #23272B;"
                                  value="Sair">
                          </li>
                      </form>
                  </ul>
              </nav>
-         @elseif(auth()->user()->role == 'Admin')
+         @else
              <nav class="mt-2">
                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                      data-accordion="false">
@@ -148,8 +148,6 @@
                              </p>
                          </a>
                      </li>
-
-
                      <form action="{{ route('logout') }}" method="post">
                          @csrf
                          <li class="nav-item">
@@ -159,7 +157,6 @@
                  </ul>
              </nav>
          @endif
-
          <!-- /.sidebar-menu -->
      </div>
      <!-- /.sidebar -->

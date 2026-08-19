@@ -89,21 +89,10 @@
                 </div>
                 <!-- ./col -->
             </div>
-        @elseif(auth()->user()->role == 'Inativo')
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-12" style="text-align: center">
-                        <h5>
-                            Usuário não verificado! <br>
-                            Entre em contato com o administrador.
-                        </h5>
-                    </div>
-                </div>
-            </div>
-    </div>
+Ï    </div>
     <!-- /.row -->
     @endif
-    </div><!-- /.container-fluid -->
+   
     </section>
     <!-- /.content -->
     </div>
