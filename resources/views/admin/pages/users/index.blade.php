@@ -172,8 +172,10 @@
                                                         data-target="#modal-default{{ $item->id }}">
                                                         <i class="nav-icon far fa-edit"></i>
                                                     </a>
-                                                    <a href="{{ route('admin.pages.user.destroy', [$item->id]) }}" title="Deletar">
-                                                        <i class="fa fa-trash-alt"></i>                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                    <a href="{{ route('admin.pages.user.destroy', [$item->id]) }}"
+                                                        title="Deletar">
+                                                        <i class="fa fa-trash-alt"></i> <ion-icon
+                                                            name="trash-outline"></ion-icon>
                                                     </a>
                                                     {{-- modal statu --}}
                                                     <div class="modal fade" id="modal-default{{ $item->id }}"
@@ -193,7 +195,6 @@
                                                                     <div class="modal-body">
                                                                         <select name="role" class="form-control">
                                                                             <option value="Ativo">Ativo</option>
-                                                                            <option value="Inativo">Inativo</option>
                                                                             <option value="Admin">Admin</option>
                                                                             {{-- <option value=""></option> --}}
                                                                             {{-- <option value=""></option> --}}
