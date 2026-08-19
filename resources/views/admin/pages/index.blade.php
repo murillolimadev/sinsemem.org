@@ -89,10 +89,10 @@
                 </div>
                 <!-- ./col -->
             </div>
-Ï    </div>
+    </div>
     <!-- /.row -->
     @endif
-   
+
     </section>
     <!-- /.content -->
     </div>
