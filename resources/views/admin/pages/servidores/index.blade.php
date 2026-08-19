@@ -62,7 +62,7 @@
                                         @foreach ($data as $item)
                                             <tr>
                                                 <td>{{ $intem->id }}</td>
-                                                <td>{{ $intem->id }}</td>
+                                                <td>{{ $intem->name }}</td>
                                                 <td>{{ $intem->id }}</td>
                                                 <td>{{ $intem->id }}</td>
                                                 <td></td>
