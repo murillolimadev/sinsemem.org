@@ -17,15 +17,31 @@ class AdminController extends Controller
      */
     public function index()
     {
+        session_start();
+        $_SESSION = array();
+
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(
+                session_name(),
+                '',
+                time() - 42000,
+                $params["path"],
+                $params["domain"],
+                $params["secure"],
+                $params["httponly"]
+            );
+        }
+
+        session_destroy();
+        setcookie('foobar', '', [
+            'expires' => -1
+        ]);
+
         $noticias = Noticia::latest()->get();
         $users = User::latest()->get();
         $reunioes = Reunioe::latest()->get();
-        
         return view('admin.pages.index', compact('noticias', 'users', 'reunioes'));
-       
-
-
-        // return view('admin.pages.index', compact('noticias', 'users', 'reunioes'));
     }
 
     /**
