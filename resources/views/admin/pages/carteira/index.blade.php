@@ -56,15 +56,11 @@
                                     <div class="card-body text-center">
                                         <br>
 
-                                        <button type="button" class="btn btn-default" data-toggle="modal"
-                                            data-target="#foto">
-                                            Alterar foto
-                                        </button>
+
 
 
                                         <div class="row" style="margin-top: 10px;">
                                             <div class="col-sm-12 mb-2">
-                                                <h3>Frente</h3>
                                                 <button class="botao" data-toggle="modal" data-target="#exampleModal">
                                                     <div class="logocarteira">
                                                         <img src="{{ asset('home/assets/images/logo200x200px.png') }}"
@@ -82,17 +78,21 @@
                                                             alt="">
                                                     </div>
                                                     <div class="col-md-12 text-center">
-                                                        <p class="nomeuser"><strong>{{ auth()->user()->name }}</strong></p>
-                                                        <p class="nomeuser"><strong>{{ auth()->user()->cargo }}</strong></p>
-                                                        <p class="nomeuser">
-                                                            <strong>Matrícula:
-                                                                {{ auth()->user()->matricula }}</strong>
+                                                        <p class="nomeuser">{{ auth()->user()->name }}<br>
+                                                            {{ auth()->user()->cargo }}<br>
+
+                                                            Matrícula:
+                                                            <b>{{ auth()->user()->matricula }}</b>
                                                         </p>
                                                     </div>
+                                                </button><br><br>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#foto">
+                                                    Alterar foto de perfil
                                                 </button>
                                             </div>
 
-                                            <div class="col-sm-12">
+                                            {{-- <div class="col-sm-12">
                                                 <h3>Verso</h3>
                                                 <button class="carteira text-center">
                                                     <div class="" style="margin-top: 30px">
@@ -101,7 +101,7 @@
                                                         <p>CNPJ: 06.100.310/0001-64</p>
                                                     </div>
                                                 </button>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>

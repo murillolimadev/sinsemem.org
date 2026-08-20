@@ -82,7 +82,7 @@
                          <a href="{{ route('admin.pages.reset') }}" class="nav-link">
                              <i class="nav-icon fas fa-edit"></i>
                              <p>
-                                 Resertar senha
+                                 Alterar senha de acesso
                              </p>
                          </a>
                      </li>
