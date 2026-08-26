@@ -13,6 +13,7 @@
 
     <title>SINSEMEM - @yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('home/assets/images/logo200x200px.png') }}">
+    <link rel="shortcut icon" href="{{ asset('home/assets/images/logo200x200px.png') }}">
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('home/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
